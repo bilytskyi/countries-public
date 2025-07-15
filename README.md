@@ -1,4 +1,4 @@
-# 🌍 Countries Explorer (Frontend Mentor Challenge)
+# Countries Explorer (Frontend Mentor Challenge)
 
 ![Startbildschirm](./screenshots/1.png)
 
