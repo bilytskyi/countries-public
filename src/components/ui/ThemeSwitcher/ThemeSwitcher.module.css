@@ -1,0 +1,25 @@
+.moon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.button {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  font-size: 14px;
+  color: var(--text-color);
+  gap: 6px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.button:hover {
+  transform: scale(1.03);
+}
+
+.name {
+  font-weight: 600;
+}

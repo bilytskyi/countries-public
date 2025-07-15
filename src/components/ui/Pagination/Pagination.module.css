@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.pages {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 1.5rem;
+  align-items: end;
+}
+
+.pages > div:not(.spread) {
+  background-color: var(--element-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: filter 0.1s ease-in-out;
+}
+
+.pages > div:hover {
+  filter: brightness(120%);
+  transform: scale(1.02);
+}
+
+.spread {
+  cursor: default;
+  font-size: 1.5rem;
+}
+
+.current {
+  filter: brightness(150%);
+}

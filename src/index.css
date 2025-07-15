@@ -1,0 +1,70 @@
+/* Root Variables for Light and Dark Mode */
+:root {
+  --dark-blue: hsl(209, 23%, 22%);
+  --very-dark-blue-bg: hsl(207, 26%, 17%);
+  --very-dark-blue-text: hsl(200, 15%, 8%);
+  --dark-gray: hsl(0, 0%, 52%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Default Light Mode Colors */
+  --background-color: var(--very-light-gray);
+  --text-color: var(--very-dark-blue-text);
+  --element-color: var(--white);
+  --input-color: var(--dark-gray);
+  --spin-color: var(--very-dark-blue-bg);
+  /* --shadow-color: var(--dark-gray); */
+  --shadow-color: hsl(0, 0%, 52%, 0.4);
+}
+
+[data-theme='dark'] {
+  --background-color: var(--very-dark-blue-bg);
+  --text-color: var(--white);
+  --element-color: var(--dark-blue);
+  --spin-color: var(--very-light-gray);
+  /* --shadow-color: var(--very-dark-blue-text); */
+  --shadow-color: hsla(200, 15%, 8%, 0.4);
+}
+
+.con {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  gap: 20px;
+  padding: 1rem;
+}
+
+/* =============================
+   Global Reset & Styles
+   ============================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+p {
+  font-weight: 300;
+}
